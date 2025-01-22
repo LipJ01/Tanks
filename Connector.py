@@ -70,7 +70,7 @@ class Connection:
         self.client.on_message = self.on_message
         self.client.on_subscribe = self.on_subscribe
         self.client.username_pw_set("user1", "pass")
-        self.client.connect_async("3.10.159.115", 51041, 60, bind_address="")
+        self.client.connect_async("3.10.159.115", 51041, 60, bind_address="") # server is off for good, no need to try it ;)
         self.client.loop_start()
         self.connected = False
         self.firstconnect = True
